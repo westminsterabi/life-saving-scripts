@@ -6,6 +6,7 @@ if [[ $? != 0 ]]; then
   url="https://atom-installer.github.com/v1.36.0/atom-mac.zip?s=1554942428\
     &amp;ext=.zip"
   echo $(curl $url -o atom-mac.zip)
+fi
 
 which -s brew
 if [[ $? != 0 ]] ; then
